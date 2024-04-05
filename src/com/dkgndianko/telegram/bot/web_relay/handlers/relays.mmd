@@ -1,0 +1,13 @@
+flowchart TB
+A(("/list")):::entryPoint --> |List of relays| B((SELECTING)):::state
+B --> |Select a relay| C([SELECTED]):::state
+C --> |edit| D(EDITING):::userInput
+C --> |remove| E(REMOVING):::userInput
+C --> |get state| F(GET_STATE):::userInput
+C --> |cancel| G(CANCEL):::userInput
+
+
+classDef userInput  fill:#2a5279, color:#ffffff, stroke:#ffffff
+classDef state fill:#222222, color:#ffffff, stroke:#ffffff
+classDef entryPoint fill:#009c11, stroke:#42FF57, color:#ffffff
+classDef termination fill:#bb0007, stroke:#E60109, color:#ffffff

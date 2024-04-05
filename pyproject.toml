@@ -1,0 +1,37 @@
+[project]
+name = "Web Relay Telegram Bot"
+description = ""
+authors = [
+    {name= "Mouhamad Ndiankho THIAM", email = "thiamouhamadpro@gmail.com"}
+]
+maintainers = [
+    {name= "Mouhamad Ndiankho THIAM", email = "thiamouhamadpro@gmail.com"}
+]
+readme = "README.md"
+licence = {file = "LICENCE"}
+keywords = ["Web relay", "relay", "telegram", "bot"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.11"
+version = ""
+dynamic = ["version"]
+[tool.poetry]
+name = "web-relay-telegram-bot"
+version = "0.1.0"
+description = "This helps handle Web relays through Telegram bot"
+authors = ["Mouhamad Nd. THIAM <thiamouhamadpro@gmail.com>"]
+license = "?IT"
+readme = "README.md"
+packages = [{include = "web_relay_telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = {extras = ["ext"], version = "^21.0.1"}
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
